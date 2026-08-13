@@ -1,0 +1,5 @@
+<resources>
+<string name="app_name">Jellyfin TV</string>
+<string name="prompt_url">Adresse de ton serveur Jellyfin (ex: http://192.168.1.20:8096)</string>
+<string name="btn_validate">Valider</string>
+</resources>
