@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#000000">
+
+  <WebView
+    android:id="@+id/webview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+  <LinearLayout
+    android:id="@+id/settingsPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#DD000000"
+    android:padding="48dp"
+    android:visibility="visible">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/prompt_url"
+      android:textColor="#FFFFFF"
+      android:textSize="18sp"
+      android:layout_marginBottom="16dp" />
+
+    <EditText
+      android:id="@+id/urlInput"
+      android:layout_width="500dp"
+      android:layout_height="wrap_content"
+      android:inputType="textUri"
+      android:imeOptions="actionDone"
+      android:textColor="#FFFFFF"
+      android:hint="http://192.168.1.20:8096"
+      android:textColorHint="#888888" />
+
+    <Button
+      android:id="@+id/validateButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:text="@string/btn_validate" />
+
+  </LinearLayout>
+
+</FrameLayout>
